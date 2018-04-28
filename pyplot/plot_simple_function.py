@@ -1,0 +1,17 @@
+#!/usr/bin/python
+
+# Numpy is a library for handling arrays (like data points)
+import numpy as np
+
+# Pyplot is a module within the matplotlib library for plotting
+import matplotlib.pyplot as plt
+
+# Create an array of 100 linearly-spaced points from 0 to 2*pi
+x = np.linspace(0,3*np.pi,100)
+y = np.cos(x)
+
+# Create the plot
+plt.plot(x,y)
+
+# Save the figure in a separate file
+plt.savefig("sin.pdf", format="pdf")
